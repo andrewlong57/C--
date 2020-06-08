@@ -1,0 +1,7 @@
+CXX=g++
+CXXFLAGS = -std=c++0x -Wall
+DEPS = Airport.h Flight.h Route.h
+OBJECTS  = Test.o
+
+main: $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
